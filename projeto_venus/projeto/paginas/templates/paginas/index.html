@@ -1,0 +1,39 @@
+{% extends 'paginas/base.html' %}
+
+{% block titulo %}
+
+<title>Página Inicial</title>
+
+{% endblock %}
+
+{% block conteudo %}
+     
+    <h1>Página Inicial</h1>
+    
+    <div>
+        <table>
+            <tr>
+                <div>
+                    <a class="button" href="{% url 'inicio' %}">
+                        Início
+                    </a>
+                </div>
+                <div>    
+                    <a class="button" href="{% url 'acpriv' %}">
+                        Acervo Privado
+                    </a>
+                </div>
+                <div>    
+                    <a class="button" href="{% url 'acpub' %}">
+                        Acervo Público
+                    </a>
+                </div>
+            </tr>
+        </table>   
+    </div>
+{% endblock %}
+    
+                
+           
+            
+    

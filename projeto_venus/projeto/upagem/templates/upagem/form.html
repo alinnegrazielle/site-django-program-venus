@@ -1,0 +1,22 @@
+{% extends 'paginas/base.html' %}
+
+{% load static %}
+
+{% block conteudo %}
+
+<h3>Upagem da Diretoria</h3>
+
+<p>Preencha os campos obrigatórios</p>
+
+<hr>
+
+<form action="" method="POST">
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <button type="submit">Upar</button>
+
+</form>
+
+{% endblock %}

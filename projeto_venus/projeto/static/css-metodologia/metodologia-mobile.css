@@ -1,0 +1,151 @@
+@media screen and (max-width: 360px){
+
+
+    .titulo{
+
+        margin-top: 10%;
+        font-family:'Grand Hotel', cursive;
+        color: black;
+        font-size: 45px;
+        margin-bottom: -50%;
+    }
+
+
+    .container{
+    
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px , 1fr));
+        grid-template-rows: minmax(100px , auto);
+        margin: 40px;
+        grid-auto-flow: dense;
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+    }
+    
+    .container .card{
+        position: relative;
+        width: 85%;
+        height: 440px;
+        box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),inset 5px 5px 5px rgba(255, 255, 255, 0.05),
+        5px 5px 5px rgba(0, 0, 0, 0.05),-5px -5px -5px rgba(255, 255, 255, 0.05);
+        border-radius: 30px;
+    }
+
+    .card{
+        margin-top: 60%;
+    }
+    
+    .container .card .box{
+    
+        background-color:pink;
+        color: white;
+        padding: 20px;
+        display: grid;
+        font-size: 20px;
+        place-items: center;
+        text-align: center;
+        transition: 0.5s;
+        border-radius: 10px;
+        position: absolute;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        transition: 0.5s;
+       
+    }
+    
+    .container .card:hover .box{
+        transform: translateY(-50px);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    
+    }
+    .container .box:hover{
+        background: #e91e63;
+    }
+
+    .container .card .box .container-1{
+
+    }
+
+   
+    
+    .container-1 p{
+    
+        font-family:'Grand Hotel', cursive;
+        color: black;
+        font-size: 30px;
+    
+    }
+    
+    .container-2 p{
+        
+        font-family:'Grand Hotel', cursive;
+        color: black;
+        font-size: 30px;
+    
+    }
+    
+    .container-3 p{
+    
+        font-family:'Grand Hotel', cursive;
+        color: black;
+        font-size: 28px;
+        
+    }
+    
+    .container-3 img{
+        margin-top: 15px;
+    }
+    
+
+    footer{
+        bottom: 0px;
+        width: 100%;
+        height: 40%;
+        background-color: deeppink;
+        color: white;
+}
+
+    .main-content{
+        height: 100%;
+        text-align: center;
+        flex-direction: column;
+        bottom: 0px;
+}
+
+    .main-content .box{
+        flex-basis: 50%;
+        padding: 10px 20px;
+}
+
+    .content{
+        display: inline;
+        justify-content: space-around;
+        text-align: center;
+}
+
+    .right-box{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    .right-box h2{
+        font-size: 15px;
+    }
+
+    .center-box{
+        font-size: 15px;
+    }
+
+    .center-box h2{
+        font-size: 15px;
+    }
+    
+    .social{
+        font-size: 10px;
+    }
+
+
+
+
+}

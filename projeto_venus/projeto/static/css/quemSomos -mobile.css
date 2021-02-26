@@ -1,0 +1,336 @@
+@media screen and (max-width: 360px){
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    
+    body{
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        width: 100%;
+        overflow-x: hidden; 
+        background-repeat: no-repeat;
+    }
+    
+    
+    nav{
+        min-height: 8vh;
+        background-color: #ffc8e3;
+        font-family: 'Bree Serif', Serif;
+        width: 100%;
+        height: 80px;
+    }
+    
+    main{
+        display: inline-block;
+    }
+    
+    .nav-links a{
+        color: deeppink;
+    } 
+    
+    a:hover{
+        background-color: #FFFCB2;
+        text-shadow: 0 0 4px pink;
+    }
+    
+    ul.nav-links-notebook{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: -4%;
+        margin-right: 10%;
+    }
+    
+    ul.nav-links-notebook li a{
+        font-size: 17px;
+        color: deeppink;
+        font-family: 'Sansita Swashed', cursive;
+        font-weight:bolder;
+        text-decoration: none;
+    }
+    
+    
+    .logo-img h4{
+        color: black; margin-left: 20px; font-size: 35px; margin-right: 65%;
+        margin-top: -40px;
+        font-family:'Grand Hotel', cursive;
+    }
+    
+    .venus-missao{
+        margin: 9%;
+    }
+    
+    .estrela{
+        margin-top: 10%;
+        margin-bottom: -12%;
+        margin-left: 32%;
+        opacity: 0;
+    }
+    
+    .estrela-2{
+        margin-top: 3%;
+        margin-bottom: -10%;
+        margin-left: -35%;
+        opacity: 0;
+    }
+    
+    .diretoria-container{
+        display: inline;
+        margin-top: 5%;
+    }
+    
+    
+    .imagem-1{
+        float: left;
+        margin-left: -2%;
+        margin-top: 5%;
+        width: 370px;
+        height: 93%;
+        border-radius: 10px;
+        background-color: #ffc8e3;
+    }
+    
+    
+    .imagem-1 h3{
+        margin-top: 10px;
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
+    
+    }
+    
+    .imagem-1 h2{
+        font-family:'Grand Hotel', cursive;
+        margin-top: 20px;
+    
+    }
+    
+    .imagem-2{
+        float: left;
+        margin-left: 1%;
+        margin-top: 5%;
+        width: 350px;
+        height: 100%;
+        border-radius: 10px;
+        background-color: #ffc8e3;
+    }
+    
+    .imagem-2 h2{
+        font-family:'Grand Hotel', cursive;
+        margin-top: 20px;
+    
+    }
+    
+    .imagem-2 h3{
+        margin-top: 10px;
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
+    }
+    
+    .imagem-3{
+        margin-top: 5%;
+        float: left;
+        margin-left: 1%;
+        height: 88%;
+        border-radius: 10px;
+        background-color: #ffc8e3;
+    }
+    
+    .imagem-3 h2{
+        font-family:'Grand Hotel', cursive;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    
+    .imagem-3 h3{
+        margin-top: 10px;
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
+        margin-right: 15px;
+    }
+    
+    .imagem-1 img{
+        margin-top: 40px;
+    }
+    
+    .imagem-2 img{
+        margin-top: 10px;
+    }
+    
+    .imagem-3 img{
+        margin-top: 50px;
+        margin-right: 2%;
+    }
+    
+    .imagem-1 p{
+       font-size: 24px;
+       padding: 10px;
+       font-family: 'Lobster', cursive;
+    
+    }
+    
+    .imagem-2 p{
+        font-size: 24px;
+        margin: 15px;
+        font-family: 'Lobster', cursive;
+    
+    }
+    
+    .imagem-3 p{
+        font-size: 24px;
+        padding: 10px;
+        font-family: 'Lobster', cursive;
+    
+    }
+    
+    .title-missao h2{
+        margin-top: 10%;
+        font-family:'Grand Hotel', cursive;
+        font-size: 50px;
+        margin-bottom: -5%;
+    }
+    
+    .venus-missao h2{
+        font-family:'Grand Hotel', cursive;
+        font-size: 50px;
+    }
+    
+    .diretoria h2{
+        font-family:'Grand Hotel', cursive;
+        font-size: 48px;
+        margin-top: 30%;
+        margin-left: 10px;
+        text-align: center;
+    }
+    
+    footer{
+        bottom: 0px;
+        width: 100%;
+        height: 40%;
+        background-color: deeppink;
+        color: white;
+        margin-top: 510%;
+}
+
+    .main-content{
+        height: 100%;
+        text-align: center;
+        flex-direction: column;
+        bottom: 0px;
+}
+
+    .main-content .box{
+        flex-basis: 50%;
+        padding: 10px 20px;
+}
+
+    .content{
+        display: inline;
+        justify-content: space-around;
+        text-align: center;
+}
+
+    .right-box{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    .right-box h2{
+        font-size: 15px;
+    }
+
+    .center-box{
+        font-size: 15px;
+    }
+
+    .center-box h2{
+        font-size: 15px;
+    }
+    
+    .social{
+        font-size: 10px;
+    }
+
+    .social h6{
+        font-size: 10px;
+    }
+    
+    .estrela-3{
+        margin-top: -8%;
+        margin-bottom: -7%;
+        margin-left: 49%;
+    }
+    
+    .estrela-4{
+        margin-right: 52%;
+        margin-top: -3%;
+    }
+    
+    .container-metodologia{
+        margin-top: 15%;
+        margin-bottom: 5%;
+    }
+    
+    ::-webkit-scrollbar{
+        width: 0;
+    }
+    
+    #scrollPath{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 10px;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.05);
+        z-index: 1;
+    }
+    
+    #progressbar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 10px;
+        z-index: 1;
+        background : linear-gradient( #FADB5E, #ff63b1) ;
+        animation: animate 5s linear infinite;
+    }
+    
+    @keyframes animate{
+        0%,100%{
+            filter: hue-rotate(0deg);
+        }
+        50%{
+            filter: hue-rotate(360deg);
+        }
+    }
+    
+    #progressbar:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background : linear-gradient(to top, #008aff, #00ffe7) ;
+        filter: blur(30px);
+    }
+    
+    #progressbar:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background : linear-gradient(to top, #008aff, #00ffe7) ;
+        filter: blur(30px);
+    }
+    
+
+}

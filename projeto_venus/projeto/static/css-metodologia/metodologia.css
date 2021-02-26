@@ -1,0 +1,236 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+    overflow-x: hidden; 
+    background-repeat: no-repeat;
+}
+
+
+nav{
+    min-height: 8vh;
+    background-color: #ffc8e3;
+    font-family: 'Bree Serif', Serif;
+    width: 100%;
+    height: 80px;
+}
+
+main{
+    display: inline-block;
+}
+
+.nav-links a{
+    color: deeppink;
+} 
+
+a:hover{
+    background-color: #FFFCB2;
+    text-shadow: 0 0 4px pink;
+}
+
+ul.nav-links-notebook{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: -4%;
+    margin-right: 10%;
+}
+
+ul.nav-links-notebook li a{
+    font-size: 17px;
+    color: deeppink;
+    font-family: 'Sansita Swashed', cursive;
+    font-weight:bolder;
+    text-decoration: none;
+}
+
+
+.logo-img h4{
+    color: black; margin-left: 20px; font-size: 35px; margin-right: 65%;
+    margin-top: -40px;
+    font-family:'Grand Hotel', cursive;
+}
+
+.title h2{
+    margin-top: 10%;
+    font-family:'Grand Hotel', cursive;
+    font-size: 60px; 
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px , 1fr));
+    grid-template-rows: minmax(100px , auto);
+    margin: 60px;
+    grid-auto-flow: dense;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+
+.container .card{
+    position: relative;
+    width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),inset 5px 5px 5px rgba(255, 255, 255, 0.05),
+    5px 5px 5px rgba(0, 0, 0, 0.05),-5px -5px -5px rgba(255, 255, 255, 0.05);
+    border-radius: 30px;
+    margin-left: 20px;
+}
+
+.container .card .box{
+
+    background-color:pink;
+    color: white;
+    padding: 20px;
+    display: grid;
+    font-size: 20px;
+    place-items: center;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    position: absolute;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.container .card:hover .box{
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+
+}
+.container .box:hover{
+    background: #e91e63;
+}
+
+.container-1 p{
+
+    font-family:'Grand Hotel', cursive;
+    color: black;
+    font-size: 30px;
+
+}
+
+.container-2 p{
+    
+    font-family:'Grand Hotel', cursive;
+    color: black;
+    font-size: 30px;
+
+}
+
+.container-3 p{
+
+    font-family:'Grand Hotel', cursive;
+    color: black;
+    font-size: 28px;
+    
+}
+
+.container-3 img{
+    margin-top: 15px;
+}
+
+.titulo{
+
+    margin-top: 7%;
+    font-family:'Grand Hotel', cursive;
+    color: black;
+    font-size: 60px;
+}
+
+.footer{
+    bottom: 0px;
+    width: 100%;
+    height: 200px;
+    background-color: deeppink;
+    color: white;
+}
+
+.main-content{
+    text-align: center;
+    flex-direction: column;
+}
+
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.estrela-3{
+    margin-top: -8%;
+    margin-bottom: -7%;
+    margin-left: 49%;
+}
+
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+#scrollPath{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    z-index: 1;
+}
+
+#progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    z-index: 1;
+    background : linear-gradient( #FADB5E, #ff63b1) ;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+    0%,100%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+#progressbar:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background : linear-gradient(to top, #008aff, #00ffe7) ;
+    filter: blur(30px);
+}
+
+#progressbar:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background : linear-gradient(to top, #008aff, #00ffe7) ;
+    filter: blur(30px);
+}

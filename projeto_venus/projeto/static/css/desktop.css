@@ -1,0 +1,265 @@
+@media (min-width: 1670px )  and (max-width: 3840px){
+
+    ul.nav-links-notebook{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: -2%;
+        margin-right: 10%;
+    }
+    
+    ul.nav-links-notebook li a{
+        font-size: 17px;
+        color: deeppink;
+        font-family: 'Sansita Swashed', cursive;
+        font-weight:bolder;
+        text-decoration: none;
+    }
+
+    .logo-img h4{
+        color: black; 
+        margin-left: 20px; 
+        font-size: 45px; 
+        margin-right: 70%;
+        margin-top: -45px;
+        font-family:'Grand Hotel', cursive;
+    }
+
+    .retangulos{
+        display: flex;
+    }
+    
+    .retangulo-esquerdo{
+        width: 500px;
+        height: 500px;
+        margin-left: 350px;
+        background-image: url("/home/emilly/Documentos/siteVênus/img/desktop/esquerdo.png");
+        background-repeat: no-repeat;
+    }
+    
+    
+    .retangulo-direito{
+        width: 500px;
+        height: 500px;
+        margin-top: 10%;
+        margin-left: 5%;
+        background-image: url("/home/emilly/Documentos/siteVênus/img/desktop/direito.png");
+        background-repeat: no-repeat;
+    }
+
+    .retangulo-esquerdo img{
+        display: none;
+    }
+
+    .retangulo-direito img{
+        display: none;
+    }
+    
+
+    .estrela-1{
+        margin-right: 20%;
+        margin-bottom: -80px;
+        position: relative;
+    }
+
+    .estrela-1 img{
+        margin-right: 20%;
+        margin-top: 5%;
+    }
+        
+    .estrela-2{
+            margin-left: 12%;
+            margin-top: -7%;
+            z-index: 9999;
+    }
+    
+    .pilar-1{
+        font-family: 'Lobster', cursive;
+        font-size: 15%;
+        margin-top: 10%;
+        background-color: white;
+        margin-bottom: 10%;
+    }
+    .pilar-1 img{
+        margin-top: 10%;
+    }
+
+
+    .pilar-1 h1{
+        margin-top: 5%;
+    }
+    
+    .pilar-2{
+        font-family: 'Lobster', cursive;
+        margin-top: 10%;
+        background-color: white;
+        margin-bottom: 10%;
+     
+    }
+
+    .pilar-2 img{
+        margin-top: 10%;
+    }
+
+
+    .pilar-2 h1{
+        margin-top: 5%;
+    }
+
+    .container .pilar-2{
+  
+        transition: 0.5s;
+    }
+    .container .pilar-3{
+       
+        transition: 0.5s;
+    }
+    .container .pilar-4{
+      
+        transition: 0.5s;
+    }
+    .container .pilar-5{
+        
+        transition: 0.5s;
+    }
+    .pilar-3{
+        font-family: 'Lobster', cursive;
+        margin-top: 40%;
+        background-color: white;
+        height: 60%;
+        margin-bottom: 10%;
+    }
+    .pilar-4{
+        font-family: 'Lobster', cursive;
+        margin-top: 40%;
+        background-color: white;
+        height: 60%;
+        margin-bottom: 10%;
+    }
+    .pilar-5{
+        font-family: 'Lobster', cursive;
+        background-color: white;
+        height: 60%;
+        margin-bottom: 10%;
+    }
+
+    .pilar-5 img{
+        margin-top: 5%;
+    }
+
+
+
+.container .pilar-1 img{
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.container .pilar-2 img{
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.container .pilar-3 img{
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.container .pilar-4 img{
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.container .pilar-5 img{
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.container .pilar-1:nth-child(1){
+    grid-column: span 3;
+}
+
+.container .pilar-2:nth-child(2){
+    grid-column: span 3;
+}
+
+.container .pilar-5:nth-child(5){
+    grid-column: span 4;
+}
+
+
+.estrela-3{
+   margin-right: 12%;
+}
+
+.estrela-4{
+    margin-left: 11%;
+}
+
+.ODS-venus{
+    font-family:'Grand Hotel', cursive;
+    font-size: 80px;
+    margin-top: 5%;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+#scrollPath{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    z-index: 1;
+}
+
+#progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    z-index: 1;
+    background : linear-gradient( #FADB5E, #ff63b1) ;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+    0%,100%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+#progressbar:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background : linear-gradient(to top, #008aff, #00ffe7) ;
+    filter: blur(30px);
+}
+
+#progressbar:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background : linear-gradient(to top, #008aff, #00ffe7) ;
+    filter: blur(30px);
+}
+
+}
