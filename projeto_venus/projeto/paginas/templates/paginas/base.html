@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   {% block titulo %}
-  <title>Personal Portfolio Website</title>
+  <title>Programa Vênus</title>
   {% endblock%}
 
   <link rel="stylesheet" href="{% static 'css/venus.css' %}">
@@ -34,12 +34,12 @@
     <div class="max-width">
       <div class="img-logo"><img src="{% static './img/logo-menu.png' %}">
       </div>
-      <p><a href="{% url 'inicio' %}" style="text-decoration: none;color: black;">Programa Venus</a></p>
+      <p><a href="{% url 'inicio' %}" style="text-decoration: none;color: black;">Programa Vênus</a></p>
       <ul class="menu">
         <li><a href="#" style="text-decoration: none;">Quem Somos</a></li>
         <li><a href="#" style="text-decoration: none;">Equipe</a></li>
-        <li><a href="{% url 'listar_arquivos' %}" style="text-decoration: none;">Acervo</a></li>
-        <li><a href="{% url 'listar_categorias' %}" style="text-decoration: none;">Materiais</a></li>
+        <li><a href="#" style="text-decoration: none;">Acervo</a></li>
+        <li><a href="#" style="text-decoration: none;">Materiais</a></li>
         <li><a href="#" style="text-decoration: none;">Seja Idealizadora</a></li>
       </ul>
       <div class="menu-btn">
@@ -49,8 +49,8 @@
   </nav>
   {% endblock %}
 
+  {% block conteudo %}
   <div class="container">
-    {% block conteudo %}
     <div class="retangulos">
       <div class="menu-content">
         <div class="retangulo-direito">
@@ -193,7 +193,6 @@
     </div>
   </div>
   {% endblock %}
-  </div>
 
   {% block rodape %}
   <footer>
