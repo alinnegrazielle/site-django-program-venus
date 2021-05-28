@@ -27,16 +27,23 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 ```bash
 # Clone este repositório
-$ git clone <>
+$ git clone <https://github.com/alinnegrazielle/projeto-venus.git>
+
+# Faça a criação de um ambiente virtual
+$ python -m venv venv
+
+# Ative-o
+$ source venv/bin/activate
+
+# Instale as dependências no ambiente virtual
+$ pip install -r requirements.txt
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd <nome da pasta>
-
-# Instale as dependências
-$ 
+$ cd <projeto>
 
 # Execute a aplicação em modo de desenvolvimento
-$ 
-# O servidor inciará na porta:
+$ python3 manage.py runserver
+
+# O servidor iniciará na porta: 8000
 ```
 
