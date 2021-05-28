@@ -1,6 +1,7 @@
 from django.urls import path
 from .views import CategoriaCreate, ArquivoCreate
 from .views import CategoriaUpdate, ArquivoUpdate
+from .views import CategoriaDelete, ArquivoDelete
 
 urlpatterns = [
     path('criar/categoria', CategoriaCreate.as_view(), name='criar-categoria'),
@@ -9,4 +10,9 @@ urlpatterns = [
     path('editar/categoria/<int:pk>',
          CategoriaUpdate.as_view(), name='editar-categoria'),
     path('editar/arquivo/<int:pk>', ArquivoUpdate.as_view(), name='editar-arquivo'),
+
+    path('excluir/categoria/<int:pk>',
+         CategoriaDelete.as_view(), name='excluir-categoria'),
+    path('excluir/arquivo/<int:pk>',
+         ArquivoDelete.as_view(), name='excluir-arquivo'),
 ]
