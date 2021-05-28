@@ -11,3 +11,32 @@ Emancipar meninas e mulheres através da Educação | Apoiar Iniciativas de Meni
 <h4 align="center"> 
 	🚧  HTML | CSS | JS | DJANGO 🚀 Em construção...  🚧
 </h4>
+
+### Features
+
+- [x] Cadastro de usuário
+- [x] Para acessar o acervo de materiais da venus, será necessário ser embaixadora
+
+### Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Python | Django ](https://www.python.org/downloads/ | https://www.djangoproject.com/download/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+### 🎲 Rodando o Back End (servidor)
+
+```bash
+# Clone este repositório
+$ git clone <>
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd <nome da pasta>
+
+# Instale as dependências
+$ 
+
+# Execute a aplicação em modo de desenvolvimento
+$ 
+# O servidor inciará na porta:
+```
+
