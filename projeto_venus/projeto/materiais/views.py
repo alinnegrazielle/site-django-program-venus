@@ -10,7 +10,7 @@ class CategoriaCreate(CreateView):
     model = Categoria
     fields = ['nome']
     template_name = 'materiais/form-categoria.html'
-    success_url = reverse_lazy('inicio')
+    success_url = reverse_lazy('listar-categorias')
 
 
 class ArquivoCreate(CreateView):
@@ -26,7 +26,7 @@ class CategoriaUpdate(UpdateView):
     model = Categoria
     fields = ['nome']
     template_name = 'materiais/form-categoria.html'
-    success_url = reverse_lazy('inicio')
+    success_url = reverse_lazy('listar-categorias')
 
 
 class ArquivoUpdate(UpdateView):
@@ -41,7 +41,7 @@ class ArquivoUpdate(UpdateView):
 class CategoriaDelete(DeleteView):
     model = Categoria
     template_name = 'materiais/form-exc-cat.html'
-    success_url = reverse_lazy('inicio')
+    success_url = reverse_lazy('listar-categorias')
 
 
 class ArquivoDelete(DeleteView):
@@ -49,11 +49,14 @@ class ArquivoDelete(DeleteView):
     template_name = 'materiais/form-exc-arq.html'
     success_url = reverse_lazy('inicio')
 
-# class CategoriaList(ListView):
-#     model = Categoria
-#     template_name = 'paginas/listas/arqPriv.html'
+##################### LISTAGENS ######################
 
 
-# class ArquivoList(ListView):
-#     model = Arquivo
-#     template_name = 'paginas/listas/arquivo.html'
+class CategoriaList(ListView):
+    model = Categoria
+    template_name = 'materiais/listas/categoria.html'
+
+
+class ArquivoList(ListView):
+    model = Arquivo
+    template_name = 'materiais/listas/arquivo.html'
