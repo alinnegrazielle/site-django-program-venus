@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block conteudo %}
-<h3>Lista de Categorias Registradas</h3>
+<h3>Materiais Privados</h3>
 
 <a href="{% url 'criar-categoria' %}">Adicionar Categoria</a>
 
@@ -18,7 +18,9 @@
 
     {% for categoria in object_list %}
     <tr>
-        <td>{{ categoria.nome }}</td>
+        <td>
+            <a href="{% url 'listar-arquivos' %}">{{ categoria.nome }}</a>
+        </td>
         <td>
             <a href="{% url 'editar-categoria' categoria.pk %}">Editar</a>
             <a href="{% url 'excluir-categoria' categoria.pk %}">Excluir</a>

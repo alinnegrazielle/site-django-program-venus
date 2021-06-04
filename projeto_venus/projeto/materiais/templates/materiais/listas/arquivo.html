@@ -20,8 +20,11 @@
 
     {% for arquivo in object_list %}
     <tr>
-        <td>{{ arquivo.categoria }}</td>
-        <td>{{ arquivo.descrica }}</td>
+        {% if arquivo.categoria == arquivo.categoria %}
+            <td>{{ arquivo.categoria }}</td>
+        {% endif %}
+
+        <td>{{ arquivo.descricao }}</td>
         <td>{{ arquivo.arquivo }}</td>
         <td>
             <a href="{% url 'editar-arquivo' arquivo.pk %}">Editar</a>
