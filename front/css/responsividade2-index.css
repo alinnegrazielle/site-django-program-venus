@@ -1,0 +1,125 @@
+@media (min-width: 980px )  and (max-width: 1020px){
+    .navbar .max-width p a{
+    }
+
+    .menu-content{
+        width: 900px;
+        height: 550px;
+    }
+
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px , 1fr));
+        grid-template-rows: minmax(80px , auto);
+        padding-right: 100px;
+        padding-top: 15%;
+        grid-auto-flow: dense;
+        grid-column-gap: 4px;
+    }
+
+    .pilares h3{
+        margin-top: 35%;
+
+    }
+
+    .frase-menu h2{
+        margin: 20px 50px 0px 130px;
+    }
+
+    .direito-info{
+        margin-top: -15%;
+
+    }
+
+    .direito-info img{
+        width: 95%;
+
+    }
+
+    .subtitle h1{
+        margin-left: 10%;
+        font-size: 15px;
+        margin-top: 12%;
+    }
+    
+    button{
+        background: none;
+        color: black;
+        font-weight: 900;
+        width: 240px;
+        height: 40px;
+        border: 1px solid white;
+        font-size: 18px;
+        font-family: 'Ubuntu', sans-serif;
+        border-radius: 4px;
+        transition: .6s;
+        overflow: hidden;
+        top: 78%;
+        position: absolute;
+        left: 65%;
+        transform: translate(-50%, -50%);
+    }
+
+    .container .card-5 {
+        right: 10%;
+
+    }
+}
+
+@media (min-width: 710px )  and (max-width: 799px){
+
+    .menu-content{
+        width: 675px;
+        height: 550px;
+    }
+
+    .esquerdo-img{
+        margin-top: 10%;
+    }
+
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px , 1fr));
+        grid-template-rows: minmax(80px , auto);
+        padding-right: 100px;
+        padding-top: 15%;
+        grid-auto-flow: dense;
+        grid-column-gap: 4px;
+    }
+
+    .pilares h3{
+        margin-top: 45%;
+
+    }
+
+    .frase-menu h2{
+        margin: 20px 50px 0px 60px;
+    }
+
+    .direito-info{
+        margin-top: -18%;
+    }
+
+    .direito-info img{
+        width: 95%;
+
+    }
+
+    .subtitle h1{
+        font-size: 12px;
+        padding-left: 250px;
+        margin-top: 25%;
+    }
+    
+    button{
+        height: 40px;
+        left: 66%;
+    }
+
+    .container .card-5 {
+        right: 10%;
+
+    }
+}

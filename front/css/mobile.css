@@ -1,0 +1,251 @@
+@media screen and (max-width: 360px){
+
+    .menu-btn{
+        display: block;
+        z-index: 999;
+      }
+    
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #FFE4E1;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
+    .navbar .menu li{
+        display: block;
+    }
+
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .main-content{
+        grid-area: content;
+        background: #fbc6c5;
+        text-align: center;
+        
+    }
+    
+    .main-content .retangulo{
+        background: #ffc8e3;
+    /* margin: 10%; */
+    /* margin: -0px; */
+        margin-left: 7%;
+        width: 170%;
+        height: 180%;
+    }
+    
+    .direito img{
+        width: 90%;
+        padding-top: 20%;
+    }
+    
+    
+    .frase-index {
+        width: 180%;
+        padding: 10%;
+        font-size: 40%;
+    }
+    
+    .container{
+       
+        margin-left: 35%;
+
+    }
+    
+    .esquerdo img{
+       
+    }
+    
+    .imagens{
+        display: flex;
+    }
+    
+    .retangulo h2{
+     
+    }
+
+
+    .button::before{
+
+    }
+
+
+    .button::after{
+
+    }
+
+    .pilares::before{
+
+    }
+
+    .pilares::after{
+
+    }
+
+    .pilares h3{
+
+    }
+
+    .pilares{
+
+    }
+
+    .ODS-venus h3{
+        margin-left: 20%;
+        width: 150%;
+        font-size: 40px;
+    }
+
+    .metodology h1{
+        width: 100%;
+        margin-left: 40%;
+    }
+
+    .estrela-3 img{
+        margin-bottom: -10%;
+        margin-left: 150%;
+    }
+
+    .estrela-4 img{
+        margin-top: -3%;
+        margin-left: 70%;
+    }
+
+    .container-metodologia {
+        margin-top: 15%;
+        margin-bottom: 5%;
+    }
+    .gallery{
+        margin-left: 35%;
+        width: 120%;
+    }
+    .container .card-5{
+        margin-left: 10px;
+        padding-left: -30%;
+        padding-top: 9%;
+    }
+
+    footer{
+        bottom: 0px;
+        width: 195%;
+        height: 40%;
+        background-color: deeppink;
+        color: white;
+}
+
+    .main-content{
+        height: 100%;
+        text-align: center;
+        flex-direction: column;
+        bottom: 0px;
+}
+
+    .main-content .box{
+        flex-basis: 50%;
+        padding: 10px 20px;
+}
+
+    .content{
+        display: inline;
+        justify-content: space-around;
+        text-align: center;
+}
+
+    .right-box{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    .right-box h2{
+        font-size: 15px;
+    }
+
+    .center-box{
+        font-size: 15px;
+    }
+
+    .center-box h2{
+        font-size: 15px;
+    }
+    
+    .social{
+        font-size: 10px;
+    }
+
+    .social h6{
+        font-size: 10px;
+    }
+
+
+    ::-webkit-scrollbar{
+        width: 0;
+    }
+    
+    #scrollPath{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 10px;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.05);
+        z-index: 1;
+    }
+    
+    #progressbar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 10px;
+        z-index: 1;
+        background : linear-gradient( #FADB5E, #ff63b1) ;
+        animation: animate 5s linear infinite;
+    }
+    
+    @keyframes animate{
+        0%,100%{
+            filter: hue-rotate(0deg);
+        }
+        50%{
+            filter: hue-rotate(360deg);
+        }
+    }
+    
+    #progressbar:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background : linear-gradient(to top, #008aff, #00ffe7) ;
+        filter: blur(30px);
+    }
+    
+    #progressbar:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background : linear-gradient(to top, #008aff, #00ffe7) ;
+        filter: blur(30px);
+    }
+}

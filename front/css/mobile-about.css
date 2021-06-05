@@ -1,0 +1,338 @@
+@media screen and (max-width: 360px){
+
+   
+
+    .imagem-logo{
+        text-decoration: none;
+    }
+
+    .logo-img h4{
+        color: black; 
+        margin-left: -18px; 
+        font-size: 30px; 
+        margin-right: 70%;
+        width: 100%;
+        margin-top: -45px;
+        font-family:'Grand Hotel', cursive;
+    }
+
+    .origem img{
+        opacity: 0;
+    }
+
+
+    .retangulos{
+        background: url("/home/emilly/Documentos/siteVênus/img/mobile/about.png");
+        background-repeat: no-repeat;
+        margin-top: 20%;
+    }
+    
+
+    .depoimento h2{
+        margin-top: -200%;
+    }
+    
+    
+    
+    .retangulo-direito{
+        width:2800px;
+        height:300px;
+        margin-left: 40px;
+        margin-top: 5%;
+        background-image: url("/home/emilly/Documentos/siteVênus/img/mobile/baixo.png");
+        background-repeat: no-repeat;
+        
+        }
+    
+        .container{
+            height: 250%;
+            background: radial-gradient(circle, rgba(244,251,63,1) 0%, rgba(255,99,177,1) 100%);
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            min-height: 100vh;
+            grid-gap: 10px;
+            grid-auto-flow: dense;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+            grid-template-rows: minmax(300px,1fr);
+            grid-template-rows: minmax(300px,auto);
+            position: relative;
+            margin: 50px;
+        }
+        
+        .container .pilar-1{
+            place-items: center;
+            text-align: center;
+            transition: 0.5s;
+        }
+        
+        .container .pilar-1:hover{  
+            background: pink;
+        }
+        
+        .container .pilar-2:hover{  
+            background: pink;
+        }
+        
+        .container .pilar-3:hover{  
+            background: pink;
+        }
+        
+        .container .pilar-4:hover{  
+            background: pink;
+        }
+        .container .pilar-5:hover{  
+            background: pink;
+        }
+        
+        .container .pilar-1 img{
+            position: relative;
+            max-width: 100%;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .container .pilar-2 img{
+            position: relative;
+            max-width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .container .pilar-3 img{
+            position: relative;
+            max-width: 100%;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .container .pilar-4 img{
+            position: relative;
+            max-width: 100%;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .container .pilar-5 img{
+            position: relative;
+            max-width: 100%;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .container .pilar-1:nth-child(1){
+            grid-column: span 2;
+        }
+        
+        .container .pilar-2:nth-child(2){
+            grid-column: span 2;
+        }
+
+        .container .pilar-3:nth-child(3){
+            grid-column: span 2;
+        }
+        .container .pilar-4:nth-child(4){
+            grid-column: span 2;
+        }
+        
+        .container .pilar-5:nth-child(5){
+            grid-column: span 2;
+        }
+        
+        .ods{
+            display: block;
+        }
+        
+        
+        .pilares h3{
+            font-family:'Grand Hotel', cursive;
+            font-size: 60px;
+            margin-top: 20%;
+        }
+        
+        .pilar-1{
+            font-family: 'Lobster', cursive;
+            font-size: 15%;
+            height: 60%;
+            margin-top: 10%;
+            background-color: white;
+            max-width: 100%;
+        }
+
+        .pilar-1 h1{
+            font-size: 25px;
+            text-align: center;
+           
+        }
+        
+        .pilar-2{
+            margin-top: -20%;
+            font-family: 'Lobster', cursive;
+            background-color: white;
+            height: 90%;
+            margin-bottom: 10%;
+            max-width: 100%;
+        }
+
+        .pilar-2 h1{
+            font-size: 25px;
+            text-align: center;
+           
+        }
+
+        .pilar-3{
+            font-family: 'Lobster', cursive;
+            background-color: white;
+            height: 73%;
+            margin-top: -40px;
+        }
+
+        .pilar-3 h1{
+            font-size: 25px;
+            margin-top: -15px;
+        }
+
+        .pilar-4{
+            font-family: 'Lobster', cursive;
+            margin-top: -70px;
+            background-color: white;
+            height: 73%;
+        }
+
+        .pilar-4 h1{
+            font-size: 25px;
+            margin-top: -5%;
+        }
+
+        .pilar-5{
+            font-family: 'Lobster', cursive;
+            margin-top: -25%;
+            background-color: white;
+            margin-bottom: 10%;
+            height: 90%;
+        }
+
+        .pilar-5 h1{
+            font-size: 25px;
+        }
+
+        .metodology h2{
+                font-size: 60px;
+        }
+
+        .ODS-venus h2{
+            font-family:'Grand Hotel', cursive;
+            margin-top: 30%;
+            font-size: 50px;
+            margin-bottom: 20%;
+        }
+        
+
+    footer{
+        bottom: 0px;
+        width: 100%;
+        height: 40%;
+        background-color: deeppink;
+        color: white;
+}
+
+    .main-content{
+        height: 100%;
+        text-align: center;
+        flex-direction: column;
+        bottom: 0px;
+}
+
+    .main-content .box{
+        flex-basis: 50%;
+        padding: 10px 20px;
+}
+
+    .content{
+        display: inline;
+        justify-content: space-around;
+        text-align: center;
+}
+
+    .right-box{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    .right-box h2{
+        font-size: 15px;
+    }
+
+    .center-box{
+        font-size: 15px;
+    }
+
+    .center-box h2{
+        font-size: 15px;
+    }
+    
+    .social{
+        font-size: 10px;
+    }
+
+    .social h6{
+        font-size: 10px;
+    }
+
+
+    ::-webkit-scrollbar{
+        width: 0;
+    }
+    
+    #scrollPath{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 10px;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.05);
+        z-index: 1;
+    }
+    
+    #progressbar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 10px;
+        z-index: 1;
+        background : linear-gradient( #FADB5E, #ff63b1) ;
+        animation: animate 5s linear infinite;
+    }
+    
+    @keyframes animate{
+        0%,100%{
+            filter: hue-rotate(0deg);
+        }
+        50%{
+            filter: hue-rotate(360deg);
+        }
+    }
+    
+    #progressbar:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background : linear-gradient(to top, #008aff, #00ffe7) ;
+        filter: blur(30px);
+    }
+    
+    #progressbar:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background : linear-gradient(to top, #008aff, #00ffe7) ;
+        filter: blur(30px);
+    }
+}
