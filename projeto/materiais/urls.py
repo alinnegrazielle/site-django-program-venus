@@ -17,6 +17,7 @@ urlpatterns = [
     path('excluir/arquivo/<int:pk>',
          ArquivoDelete.as_view(), name='excluir-arquivo'),
 
-    path('listar/categorias', CategoriaList.as_view(), name='listar-categorias'),
+    path('listar/categorias',
+         CategoriaList.as_view(), name='listar-categorias'),
     path('listar/arquivos', ArquivoList.as_view(), name='listar-arquivos'),
 ]
