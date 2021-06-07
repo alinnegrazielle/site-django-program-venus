@@ -1,0 +1,241 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {% block titulo %}
+  <title>Programa Vênus</title>
+  {% endblock%}
+
+  <link rel="stylesheet" href="{% static 'css/venus.css' %}">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+  <link rel="stylesheet" href="{% static 'css/gallery.prefixed.css' %}">
+  <link rel="stylesheet" href="{% static 'css/gallery.theme.css' %}">
+
+</head>
+
+<body style="background-color: #fbc6c5;">
+
+  {% block menu %}
+  <nav class="navbar">
+    <div class="max-width">
+      <div class="img-logo"><img src="{% static './img/logo-menu.png' %}">
+      </div>
+      <p><a href="{% url 'inicio' %}" style="text-decoration: none;color: black;">Programa Vênus</a></p>
+      <ul class="menu">
+        <li><a href="#" style="text-decoration: none;">Quem Somos</a></li>
+        <li><a href="#" style="text-decoration: none;">Equipe</a></li>
+        <li><a href="#" style="text-decoration: none;">Acervo</a></li>
+        {% if request.user.is_authenticated %}
+        <div>
+          <li><a href="{% url 'listar-categorias' %}" style="text-decoration: none;">Materiais</a></li>
+          <a href="{% url 'logout' %}" style="text-decoration: none;">Sair</a>
+        </div>
+        {% else %}
+        <a href="{% url 'login' %}" style="text-decoration: none;">Login</a>
+        {% endif %}
+        <li><a href="#" style="text-decoration: none;">Seja Idealizadora</a></li>
+      </ul>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  {% endblock %}
+
+  {% block conteudo %}
+  <div class="container">
+    <div class="retangulos">
+      <div class="menu-content">
+        <div class="retangulo-direito">
+          <div class="frase-menu">
+            <h2>Inspirar garotas a mudar o mundo</h2>
+          </div>
+          <div class="esquerdo">
+            <img src="./img/menu/retangulo-esquerdo.png">
+          </div>
+        </div>
+      </div>
+      <div class="menu-content-2">
+        <div class="retangulo-direito-info">
+          <div class="direito-info">
+            <img src="./img/menu/meninas.png" id="image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="subtitle">
+    <button type="button">Faça parte do nosso time</button>
+    <h1>As idealizadoras produzem materiais feministas <br>em diversos formatos e, após correções,
+      esses trabalhos ficam armazenados <br> com a diretoria Venus!</h1>
+  </div>
+
+  <div class="pilares">
+    <h3>Nossos Pilares</h3>
+  </div>
+
+  <main>
+    <div class="container">
+      <div class="card">
+        <div class="box">
+          <div class="container-1">
+            <img src="./img/menu/1.png">
+            <p>#1 Emancipar meninas e mulheres através da educação</p>
+            <br>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="box">
+          <div class="container-2">
+            <img src="./img/menu/2.png">
+            <p>#2 Apoiar iniciativas de meninas e mulheres</p>
+            <br>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="box">
+          <div class="container-3">
+            <img src="./img/menu/3.png">
+            <p>#3 Promover a participação de meninas e mulheres em todas as esferas da sociedade</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-4">
+        <div class="box-4">
+          <div class="container-4">
+            <img src="./img/menu/4.png">
+            <p>#4 Combater toda e qualquer descriminação às meninas e mulheres </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-5">
+        <div class="box-5">
+          <div class="container-5">
+            <img src="./img/menu/5.png">
+            <p>#5 Inspirar meninas e mulheres a terem diferentes visões de futuro e, consequentemente, de mundo! </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="ODS-venus" style="font-size: 60px;">
+    <h3>Conheça os <a href="https://odsbrasil.gov.br/" style="text-decoration: none;color:hotpink;">ODS</a> do programa
+      Venus</h3>
+  </div>
+
+  <div class="gallery autoplay items-3">
+    <div id="item-1" class="control-operator"></div>
+    <div id="item-2" class="control-operator"></div>
+    <div id="item-3" class="control-operator"></div>
+    <div id="item-4" class="control-operator"></div>
+
+    <figure class="item">
+      <img src="img/ODS/objetivo5.png">
+      <h3 style="font-family: 'Lobster', cursive;
+        font-family: 'Merriweather', serif;">Alcançar a igualdade de gênero e empoderar todas as meninas e mulheres
+      </h3>
+    </figure>
+
+    <figure class="item">
+      <img src="img/ODS/objetivo8.png">
+      <h3 style="font-family: 'Lobster', cursive;
+        font-family: 'Merriweather', serif; margin-top: 2%;">Promover o crescimento econômico sustentado, inclusivo e
+        sustentável, emprego pleno, produtivo e trabalho decente para todos</h3>
+    </figure>
+
+    <figure class="item">
+      <img src="img/ODS/objetivo10.png">
+      <h3 style="font-family: 'Lobster', cursive;
+        font-family: 'Merriweather', serif;margin-top: 1%;">Reduzir a desigualdade dentro dos países e entre eles</h3>
+    </figure>
+
+    <figure class="item">
+      <img src="img/ODS/objetivo17.png">
+      <h3 style="font-family: 'Lobster', cursive;
+        font-family: 'Merriweather', serif;">Fortalecer os meios de implementação e revitalizar a parceria global para
+        o desenvolvimento sustentável</h3>
+    </figure>
+
+    <div class="controls">
+      <a href="#item-1" class="control-button">•</a>
+      <a href="#item-2" class="control-button">•</a>
+      <a href="#item-3" class="control-button">•</a>
+      <a href="#item-4" class="control-button">•</a>
+    </div>
+  </div>
+
+  <div class="container-metodologia">
+    <div class="estrela-3">
+      <img src="./img/menu/star.png">
+    </div>
+
+    <div class="metodology">
+      <h1>Conheça nossa <a style="color:hotpink; text-decoration: none;" href="./metodologia.html">metodologia</a></h1>
+    </div>
+
+    <div class="estrela-4">
+      <img src="./img/menu/star.png">
+    </div>
+  </div>
+  {% endblock %}
+
+  {% block rodape %}
+  <footer>
+    <div class="main-content">
+      <div class="left-box">
+        <div class="content">
+
+          <div class="right-box" style="margin-top: 40px;">
+            <h1 style="  font-family: 'Sansita Swashed', cursive;">Contact us</h1>
+            <div class="email">
+              <i class="fas fa-envelope"></i>
+              <span class="text">programavenus@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="social" style="margin-top: 40px;">
+            <img src="img/footer/Icone_insta.png">
+            <h4 style="font-family: 'Sansita Swashed', cursive;">Copyright &copy; Programa Vênus</h4>
+          </div>
+
+          <div class="center-box" style="margin-top: 40px;">
+            <div class="place">
+              <h1 style="font-family: 'Sansita Swashed', cursive;">Localização</h1>
+              <i class="fas fa-map-marker-alt"></i>
+              <span class="text">PT-BR</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  {% endblock %}
+
+  <script src="{% static 'js/efeito-maquina-escrever.js' %}"></script>
+  <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>
