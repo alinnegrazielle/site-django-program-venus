@@ -20,14 +20,17 @@
 
     {% for arquivo in object_list %}
     <tr>
+        {% if arquivo.categoria_id == 10 %}
         <td>{{ arquivo.categoria }}</td>
         <td>{{ arquivo.descricao }}</td>
         <td>{{ arquivo.arquivo }}</td>
+        
         <td>
             <a href="{% url 'editar-arquivo' arquivo.pk %}">Editar</a>
             <a href="{% url 'excluir-arquivo' arquivo.pk %}">Excluir</a>
             <a href="#">Publicar</a>
         </td>
+        {% endif %}
     </tr>
     {% empty %}
     <tr>
