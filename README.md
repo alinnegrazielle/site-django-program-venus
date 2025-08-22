@@ -1,3 +1,8 @@
+⚠️ Este repositório foi criado durante minha fase inicial de transição de carreira para tecnologia.<br>
+📌 Conteúdo mantido público como referência de aprendizado com Django e ambiente Linux.<br>
+✅ Repositório arquivado para registro educacional.<br>
+
+ 
  #  <h1 align="center">Projeto Venus</h1>
   ![1621388965418](https://user-images.githubusercontent.com/23532298/120011008-32aab980-bfb4-11eb-90cf-e4b6aae07c99.jpeg)
 
