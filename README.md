@@ -1,7 +1,7 @@
-⚠️ Este repositório foi criado durante minha fase inicial de transição de carreira para tecnologia.<br>
-📌 Conteúdo mantido público como referência de aprendizado com Django e ambiente Linux.<br>
-✅ Repositório arquivado para registro educacional.<br>
 
+🚀 Este projeto foi desenvolvido de forma voluntária como contribuição ao Programa Vênus, <br>
+aplicando conhecimentos em Django, banco de dados e deploy. <br>
+O objetivo foi unir aprendizado técnico com impacto positivo para a comunidade.
  
  #  <h1 align="center">Projeto Venus</h1>
   ![1621388965418](https://user-images.githubusercontent.com/23532298/120011008-32aab980-bfb4-11eb-90cf-e4b6aae07c99.jpeg)
@@ -51,4 +51,6 @@ $ python3 manage.py runserver
 
 # O servidor iniciará na porta: 8000
 ```
-
+⚠️ Este repositório foi criado durante minha fase inicial de transição de carreira para tecnologia.<br>
+📌 Conteúdo mantido público como referência de aprendizado com Django e ambiente Linux.<br>
+✅ Repositório arquivado para registro educacional.<br>
