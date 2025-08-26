@@ -3,10 +3,10 @@
 aplicando conhecimentos em Django, banco de dados e deploy. <br>
 O objetivo foi unir aprendizado técnico com impacto positivo para a comunidade.
  
- #  <h1 align="center">Projeto Venus</h1>
+ #  <h1 align="center">Projeto Vênus</h1>
   ![1621388965418](https://user-images.githubusercontent.com/23532298/120011008-32aab980-bfb4-11eb-90cf-e4b6aae07c99.jpeg)
 
-# WebSite programa Venus
+# WebSite programa Vênus
 
 Emancipar meninas e mulheres através da Educação | Apoiar Iniciativas de Meninas e Mulheres
 
@@ -20,7 +20,7 @@ Emancipar meninas e mulheres através da Educação | Apoiar Iniciativas de Meni
 ### Features
 
 - [x] Cadastro de usuário
-- [x] Para acessar o acervo de materiais da venus, será necessário ser embaixadora
+- [x] Para acessar o acervo de materiais da vênus, será necessário ser embaixadora
 
 ### Pré-requisitos
 
